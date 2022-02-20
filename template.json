@@ -60,7 +60,15 @@
       "templates": ["base"],
       "quantity": 1,
       "weight": 0,
+      "cost": [0,0,0],
       "formula": "d20 + @str.mod + ceil(@lvl / 2)"
+    },
+    "weapon": {
+      "type":["simple","martial"],
+      "base-damage": "d0",
+      "damage": "base-damage +  @str.mod",
+      "magic-bonus":0,
+      "attuned":["no","yes", "na"]
     },
     "feature": {
       "templates": ["base"]
